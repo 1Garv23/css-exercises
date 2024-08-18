@@ -9,18 +9,28 @@
   </head>
   <body>
     <div class="header">
+
+      <div class="container-left">
       <div class="logo">
         LOGO
       </div>
+
       <ul class="links">
         <li><a href="https://google.com">link-one</a></li>
         <li><a href="https://google.com">link-two</a></li>
         <li><a href="https://google.com">link-three</a></li>
       </ul>
-      <button class="notifications">
-        1 new notification
-      </button>
-      <div class="profile-image"></div>
+      </div>
+      <!-- margin-left:auto is itself a second method, first is group them into left and right} -->
+      <!-- instead of margin-left:auto on container-right, i thought of introducing an empty div in flex container, it would have flex shrink set to 1 while other have it 0-->
+      <div class="container-right">
+        <button class="notifications">
+          1 new notification
+        </button>
+
+        <div class="profile-image"></div>
+      </div>
+
     </div>
   </body>
 </html>
