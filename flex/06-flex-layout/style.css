@@ -6,21 +6,68 @@ body {
   overflow: hidden;
   font-family: Roboto, sans-serif;
 }
-
+.page-container{
+  display:flex;
+  flex-direction: column;
+  /* idk why this isnt working */
+  justify-content: space-between;
+  height: 100vh;
+}
 img {
   width: 600px;
 }
-
+a{
+  text-decoration: none;
+  color:grey;
+}
 button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
   background: #eee;
 }
-
-input {
+.header, .footer{
+  display:flex;
+  justify-content: space-between;
+  padding:12px;
+}
+.footer{
+  background-color:#ece9e9;
+}
+.left-links, .right-links{
+  display:flex;
+  gap:10px;
+}
+.content{
+  align-self:center;
+  display:flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap:16px;
+}
+.input {
   border: 1px solid #ddd;
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+  
+  align-self:center;
+  /* margin-left:auto;
+  margin-right:auto; */
+}
+ul{
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+.buttons{
+  display:flex;
+  padding:5px;
+  /* justify-content: flex-start; */
+}
+.b1{
+  margin-left:auto;
+}
+.b2{
+  margin-right:auto;
 }
